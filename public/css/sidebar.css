@@ -1,0 +1,41 @@
+.comments {
+  margin: 50px auto 50px auto;
+  padding: 0 10px 0 20px;
+  font-family: Arial, Tahoma;
+  border-left: 1px solid #ccc;
+}
+
+.comments p {
+  line-height: 1.5;
+  background-color: #fff;
+  border: 2px solid #6c757d;
+  border-radius: 10px 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.comments p:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #797979;
+  border: 3px solid #6b6b6b;
+  position: absolute;
+  top: 14px;
+  left: -32px;
+}
+
+.comments p:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px;
+  border-color: transparent #6c757d transparent transparent;
+  position: absolute;
+  top: 12px;
+  left: -19px;
+}
